@@ -29,13 +29,13 @@ _Screenshot 3: Edit Student Record_
 1. Clone this repository to your local machine:
 
    ```
-   git clone https://github.com/yourusername/sat-score-management.git
+   git clone https://github.com/vimal4dhiman/student-details-manager
    ```
 
 2. Change to the project directory:
 
    ```
-   cd sat-score-management
+   cd frontend
    ```
 
 3. Install the required dependencies:
