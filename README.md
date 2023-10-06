@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# SAT Score Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+The SAT Score Management System is a web application designed to help users manage and track SAT scores and student information. It provides a user-friendly interface for adding, editing, and deleting student records, as well as calculating student ranks based on SAT scores.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Add new student records with detailed information.
+- Edit existing student records, including SAT score updates.
+- Delete student records.
+- Calculate student ranks based on SAT scores.
+- User-friendly interface for easy data management.
+- Responsive design for a seamless experience on various devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![ScreenshotAlt text](<Screenshot 2023-10-06 191623.png>)
+_Screenshot 1: Home Page_
 
-### `npm test`
+![Alt text](<Screenshot 2023-10-06 191635.png>)
+_Screenshot 2: Add Student Record Form_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Alt text](<Screenshot 2023-10-06 191645.png>)
+_Screenshot 3: Edit Student Record_
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone this repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```
+   git clone https://github.com/yourusername/sat-score-management.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Change to the project directory:
 
-### `npm run eject`
+   ```
+   cd sat-score-management
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install the required dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```
+   npm start
+   ```
 
-## Learn More
+5. The application will be accessible at [http://localhost:3000](http://localhost:3000) in your web browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Open the application in your web browser.
 
-### Code Splitting
+2. Use the "Create" button to add new student records.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Use the "Edit" button to update existing student records, including deleting details, Updating SAT Scores and getting ranks.
 
-### Analyzing the Bundle Size
+## API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application uses the following API endpoints for data management:
 
-### Making a Progressive Web App
+- `GET /satdata`: Retrieve a list of all student records.
+- `POST /satdata`: Add a new student record.
+- `PUT /satdata/updatescore?name=<student_name>&satScore=<new_score>`: Update a student's SAT score by name.
+- `DELETE /satdata/delete?name=<student_name>`: Delete a student record by name.
+- `GET /satdata/getrank?name=<student_name>`: Calculate rank in backend and retrieve the rank of a student by name.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Technologies Used
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React.js
+- Node.js
+- Express.js
+- MongoDB
+- HTML/CSS
+- JavaScript
