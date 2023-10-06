@@ -1,8 +1,8 @@
-# Studend Details Management System
+# Student Details Management System
 
 ## Description
 
-The Studend Details Management System is a web application designed to help users manage and track SAT scores and student information. It provides a user-friendly interface for adding, editing, and deleting student records, as well as calculating student ranks based on SAT scores.
+The Student Details Management System is a web application designed to help users manage and track SAT scores and student information. It provides a user-friendly interface for adding, editing, and deleting student records, as well as calculating student ranks based on SAT scores.
 
 ## Features
 
